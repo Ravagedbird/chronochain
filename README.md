@@ -61,6 +61,11 @@ Combined: ~320 bits entropy. Unforgeable.
   },
   "signature": "ed25519: base64_sig_here"
 }
-
+## Quickbuild
+Doc Hash → [UTC t] → Pulsar Phases (8x) → SHA3-256 → Ed25519 Sig
 - **CTA Amp:** In Next Orbit, amp the cross-link: "Sync with Loom-DNS for pulsar-secured handshakes. Eternal time meets silent routing. [loom-dns](https://github.com/Ravagedbird/loom-dns)."
 
+
+
+                 ↓
+Verify: Recompute Phases @ t → Match? True. Else: Fraud.
