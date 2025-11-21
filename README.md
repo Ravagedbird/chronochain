@@ -79,12 +79,12 @@ Combined: ~320 bits entropy. Unforgeable.
  "tai_offset": 37,
  "pulsars": { "J0437-4715": 0.8273645182736451 }
  }
- 7. Security Considerations
+### 7. Security Considerations
  Phase forgery requires astrophysical spoofing. Ephemeris integrity must be ensured.
- 8. References
- Hobbs et al., TEMPO2 documentation
- PINT documentation
- RFC 2119
+### 8. References
+ - Hobbs et al., TEMPO2 documentation
+ - PINT documentation
+ - RFC 2119
 ## 🛰️ How Chronochain Can Provide a GPS-Header-Sized, Authority-Free Time Field
 # High-Level Concept (Simple to Understand)
 
