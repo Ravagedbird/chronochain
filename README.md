@@ -61,3 +61,6 @@ Combined: ~320 bits entropy. Unforgeable.
   },
   "signature": "ed25519: base64_sig_here"
 }
+
+- **CTA Amp:** In Next Orbit, amp the cross-link: "Sync with Loom-DNS for pulsar-secured handshakes. Eternal time meets silent routing. [loom-dns](https://github.com/Ravagedbird/loom-dns)."
+
