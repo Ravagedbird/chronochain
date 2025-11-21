@@ -45,3 +45,19 @@ Pulsars spun before us. They'll spin after. This is our tick. What's your first 
 | J1640+2224   | 3.163      | 180 ns      | +22°       | Full sky redundancy           |
 
 Combined: ~320 bits entropy. Unforgeable.
+## JSON V.01
+### Timestamp Format (v0.1)
+
+```json
+{
+  "version": "0.1",
+  "utc": "2025-11-20T23:45:12.000Z",
+  "tai_offset": 37,
+  "doc_sha3_256": "a1b2c3d4e5f6...",
+  "pulsars": {
+    "J0437-4715": 0.8273645182736451,
+    "J1713+0747": 0.3910384019283746,
+    // ... phases for all eight
+  },
+  "signature": "ed25519: base64_sig_here"
+}
