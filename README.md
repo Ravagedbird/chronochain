@@ -1,4 +1,3 @@
-# chronochain
 # Cronochain: Galactic timestamps that survive us.
 **One-sentence pitch**  
 A 256-bit hash made from the exact rotation phases of eight millisecond pulsars at a given moment.  
@@ -93,6 +92,18 @@ Chronochain generates a compact time hash derived not from a server or satellite
 
 This makes it possible to embed a self-verifying time code—similar in size to a GPS time field—into any packet header, without needing a GNSS constellation or central authority.
 
+### Why It Fits in a GPS Header Size
+
+SHA3-256 output can be truncated to 32 or 64 bits while maintaining:
+
+ - strong collision resistance.
+
+~millisecond uniqueness for typical applications
+
+ - physical verifiability.
+
+ ##### This lets the Chronochain Time Field slot into existing telemetry structures with zero redesign of the transport layer.
+
 ## Engineering Description 
 Chronochain Time Field (CTF)
 
@@ -117,18 +128,6 @@ Global – Works on Earth, Mars, Luna, or in deep space.
 Spoof-resistant – Faking pulsar phases requires astrophysical forgery.
 
 Gracefully degrading – If connectivity collapses, timestamps remain checkable with a $500 radio telescope.
-
-### Why It Fits in a GPS Header Size
-
-SHA3-256 output can be truncated to 32 or 64 bits while maintaining:
-
-strong collision resistance
-
-~millisecond uniqueness for typical applications
-
-physical verifiability
-
-This lets the Chronochain Time Field slot into existing telemetry structures with zero redesign of the transport layer.
 
 ## Formal Specification Text 
 4.x Chronochain Time Field (CTF)
