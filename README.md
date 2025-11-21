@@ -22,6 +22,8 @@ If you can see the sky, you can verify a Cronochain proof — today, in 1,000 ye
 v0.9 spec – prototype in <100 lines Python – looking for astronomers, crypto builders, and people who hate fragile time.
 
 Because when everything else is dust, the pulsars will still be ticking.
+## Quickbuild
+Doc Hash → [UTC t] → Pulsar Phases (8x) → SHA3-256 → Ed25519 Sig
 ## Next Orbit
 
 - **Prototype It:** Fork, run the stub on a dummy doc (this README?), verify against Tempo2 ephemeris. Commit your first hash—let's chain 'em.
@@ -62,7 +64,7 @@ Combined: ~320 bits entropy. Unforgeable.
   "signature": "ed25519: base64_sig_here"
 }
 ## Quickbuild
-Doc Hash → [UTC t] → Pulsar Phases (8x) → SHA3-256 → Ed25519 Sig
+
 - **CTA Amp:** In Next Orbit, amp the cross-link: "Sync with Loom-DNS for pulsar-secured handshakes. Eternal time meets silent routing. [loom-dns](https://github.com/Ravagedbird/loom-dns)."
 
 
