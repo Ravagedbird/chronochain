@@ -56,8 +56,11 @@ Combined: ~320 bits entropy. Unforgeable.
  a specified set of millisecond pulsars.
 ### 2. Terminology
  TOA: Time of Arrival.
+ 
  Phase: A real number in [0.0, 1.0).
+ 
  Timing Model: A parameter file describing a pulsar’s spin and astrophysical properties.
+ 
 ### 3. Input Requirements
  Implementations must accept:- UTC timestamp (ISO8601 Z format)- Pulsar timing models (TEMPO2/PINT format)- Observer position (Earth-based, planetary, or deep-space)
 ### 4. Pipeline Overview
