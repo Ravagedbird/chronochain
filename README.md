@@ -44,7 +44,7 @@ Pulsars spun before us. They'll spin after. This is our tick. What's your first 
 | J0613−0200   | 3.062      | 170 ns      | −02°       | Northern coverage             |
 | J1640+2224   | 3.163      | 180 ns      | +22°       | Full sky redundancy           |
 
-Combined: ~320 bits entropy. Unforgeable.
+Combined: ~300 bits of physically irreversible information about the moment the universe received the photons.
 ## Chronochain: Pulsar Phase Computation Pipeline
  Draft Specification – Version 0.1
  Intended Status: Experimental
