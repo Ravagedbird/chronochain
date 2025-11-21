@@ -47,6 +47,44 @@ Pulsars spun before us. They'll spin after. This is our tick. What's your first 
 | J1640+2224   | 3.163      | 180 ns      | +22°       | Full sky redundancy           |
 
 Combined: ~320 bits entropy. Unforgeable.
+## Chronochain: Pulsar Phase Computation Pipeline
+ Draft Specification – Version 0.1
+ Intended Status: Experimental
+ 1. Introduction
+ This document defines the Chronochain Phase Computation Pipeline, a deterministic
+ procedure for converting a UTC timestamp into a normalized fractional spin phase for
+ a specified set of millisecond pulsars.
+ 2. Terminology
+ TOA: Time of Arrival.
+ Phase: A real number in [0.0, 1.0).
+ Timing Model: A parameter file describing a pulsar’s spin and astrophysical properties.
+ 3. Input Requirements
+ Implementations must accept:- UTC timestamp (ISO8601 Z format)- Pulsar timing models (TEMPO2/PINT format)- Observer position (Earth-based, planetary, or deep-space)
+ 4. Pipeline Overview
+ UTC → TAI → TT → TDB → Barycentric TOA → Infinite Phase → Fractional Phase
+ 5. Detailed Pipeline
+ 5.1 UTC to TDB
+ UTC → TAI → TT (TC = TAI + 32.184s) → TDB via planetary ephemeris.
+ 5.2 Barycentric Correction
+ Compute solar-system barycentric arrival time including relativity corrections.
+ 5.3 Phase Calculation
+φ∞(t) = F0·∆t + 1/2·F1·∆t² + 1/6·F2·∆t³ + φ0
+ 5.4 Fractional Phase
+ φ = φ∞ mod 1
+ 6. JSON Format
+ {
+ "version": "0.1",
+ "utc": "2025-11-21T00:14:22.000Z",
+ "tai_offset": 37,
+ "pulsars": { "J0437-4715": 0.8273645182736451 }
+ }
+ 7. Security Considerations
+ Phase forgery requires astrophysical spoofing. Ephemeris integrity must be ensured.
+ 8. References
+ Hobbs et al., TEMPO2 documentation
+ PINT documentation
+ RFC 2119
+
 ## JSON V.01
 ### Timestamp Format (v0.1)
 
