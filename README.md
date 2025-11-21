@@ -1,12 +1,11 @@
 # chronochain
 # Cronochain: Galactic timestamps that survive us.
-# Cronochain – Time that survives civilization
-
 **One-sentence pitch**  
 A 256-bit hash made from the exact rotation phases of eight millisecond pulsars at a given moment.  
-No servers. No humans. No trust.  
-Just physics.
+No servers. No humans. No trust. Just physics.
+
 >disclaimer I have no education, just interest, if this is dumb help me fix it, you can brag later.
+>
 ## **Why it exists**  
 GPS dies. NTP dies. Atomic clocks stop.  
 Pulsars keep spinning for billions of years with nanosecond stability.  
