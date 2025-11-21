@@ -172,8 +172,9 @@ Just time, as written by the galaxy itself.
 
 
 
-GPS:      Satellite → Trust → Receiver
-Chronochain: Pulsars → Physics → Receiver
+- GPS:    Satellite → Trust → Receiver
+
+- Chronochain:    Pulsars → Physics → Receiver
 
 
 ## JSON V.01
