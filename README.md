@@ -22,3 +22,11 @@ If you can see the sky, you can verify a Cronochain proof — today, in 1,000 ye
 v0.9 spec – prototype in <100 lines Python – looking for astronomers, crypto builders, and people who hate fragile time.
 
 Because when everything else is dust, the pulsars will still be ticking.
+## Next Orbit
+
+- **Prototype It:** Fork, run the stub on a dummy doc (this README?), verify against Tempo2 ephemeris. Commit your first hash—let's chain 'em.
+- **Collaborate:** Astronomers, hit me with pulsar picks. Crypto heads, EdDSA tweaks? Devs, GPS embed script? Issues/PRs open—no gatekeeping.
+- **Amplify:** Share on X: "Timestamped this with neutron stars. Cronochain: because Earth time is fragile. #PulsarProof #CosmicChain" + repo link.
+- **Weave Wider:** Pair with Loom for pulsar-secured routing. Time + space = unbreakable web. Repo: [loom-dns](https://github.com/Ravagedbird/loom-dns).
+
+Pulsars spun before us. They'll spin after. This is our tick. What's your first proof?
