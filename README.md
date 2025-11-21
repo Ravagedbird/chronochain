@@ -3,7 +3,7 @@
 A 256-bit hash made from the exact rotation phases of eight millisecond pulsars at a given moment.  
 No servers. No humans. No trust. Just physics.
 
->Disclaimer: I have no education, just interest, if this is dumb help me fix it, you can brag later.
+>Disclaimer: I have no education, just interest. If this is dumb, help me fix it, you can brag about it later.
 >
 ## **Why it exists**  
 GPS dies. NTP dies. Atomic clocks stop.  
