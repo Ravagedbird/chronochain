@@ -30,7 +30,7 @@ Because when everything else is dust, the pulsars will still be ticking.
 - **Weave Wider:** Pair with Loom for pulsar-secured routing. Time + space = unbreakable web. Repo: [loom-dns](https://github.com/Ravagedbird/loom-dns).
 
 Pulsars spun before us. They'll spin after. This is our tick. What's your first proof?
-Why Pulsars?
+## Why Pulsars?
 ### The Founding Eight (Mainnet Set)
 
 | PSR Name      | Period (ms) | RMS Residual | Declination | Why?                          |
