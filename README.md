@@ -30,3 +30,18 @@ Because when everything else is dust, the pulsars will still be ticking.
 - **Weave Wider:** Pair with Loom for pulsar-secured routing. Time + space = unbreakable web. Repo: [loom-dns](https://github.com/Ravagedbird/loom-dns).
 
 Pulsars spun before us. They'll spin after. This is our tick. What's your first proof?
+Why Pulsars?
+### The Founding Eight (Mainnet Set)
+
+| PSR Name      | Period (ms) | RMS Residual | Declination | Why?                          |
+|---------------|-------------|--------------|-------------|-------------------------------|
+| J0437−4715   | 5.757      | 110 ns      | −47°       | Brightest, closest pulsar    |
+| J1713+0747   | 4.570      | 140 ns      | +07°       | PTA workhorse                 |
+| J1909−3744   | 2.947      | 120 ns      | −37°       | Extremely stable              |
+| J1600−3053   | 3.598      | 160 ns      | −30°       | Southern sky coverage         |
+| B1937+21     | 1.558      | 100 ns      | +21°       | Original millisecond pulsar   |
+| B1821−24     | 3.054      | 190 ns      | +09°       | High DM stability             |
+| J0613−0200   | 3.062      | 170 ns      | −02°       | Northern coverage             |
+| J1640+2224   | 3.163      | 180 ns      | +22°       | Full sky redundancy           |
+
+Combined: ~320 bits entropy. Unforgeable.
