@@ -106,28 +106,23 @@ SHA3-256 output can be truncated to 32 or 64 bits while maintaining:
 
 ## Engineering Description 
 Chronochain Time Field (CTF)
-
 Chronochain defines a 32–64 bit compressed time value derived from:
-
-UTC timestamp
-
-Pulsar phases (8 × fractional rotation values)
-
-SHA3-256 reduction
-
+- UTC timestamp
+- Pulsar phases (8 × fractional rotation values)
+- SHA3-256 reduction
 The CTF is a fixed-width field that can replace or augment the GPS TOW (Time-of-Week) field.
 
-Properties
+### Properties
 
-Decentralized – No satellites, NTP servers, or trust anchors required.
+- Decentralized – No satellites, NTP servers, or trust anchors required.
 
-Self-verifying – Any receiver with pulsar ephemerides can validate a time field independently.
+- Self-verifying – Any receiver with pulsar ephemerides can validate a time field independently.
 
-Global – Works on Earth, Mars, Luna, or in deep space.
+- Global – Works on Earth, Mars, Luna, or in deep space.
 
-Spoof-resistant – Faking pulsar phases requires astrophysical forgery.
+- Spoof-resistant – Faking pulsar phases requires astrophysical forgery.
 
-Gracefully degrading – If connectivity collapses, timestamps remain checkable with a $500 radio telescope.
+- Gracefully degrading – If connectivity collapses, timestamps remain checkable with a $500 radio telescope.
 
 ## Formal Specification Text 
 4.x Chronochain Time Field (CTF)
@@ -141,21 +136,21 @@ Where Truncate_N() selects the least-significant N bits, where N ∈ {32, 64}.
 
 Receivers MAY reconstruct and verify the timestamp by recomputing:
 
-Pulsar phases at the declared UTC time
+-  Pulsar phases at the declared UTC time.
 
-SHA3-256 hash
+-  SHA3-256 hash.
 
-Truncation to N bits
+-  Truncation to N bits.
 
 A match indicates the timestamp is astrophysically consistent and was not forged except by an adversary capable of generating synthetic pulsar signals.
 
 Collision Expectations
 
-With N = 32 bits:
+- With N = 32 bits:
 
 Collision probability ~ 1 in 4 billion.
 
-With N = 64 bits:
+- With N = 64 bits:
 
 Collision probability functionally negligible for global telemetry use.
 
